@@ -4,6 +4,20 @@ var router = express.Router();
 var monk = require('monk');  // an alternative of Monk is Mongoose
 var db = monk('localhost:27017/vidzy');
 
+//Collecton object will provide these methoda
+//insert
+// find
+// findOne
+// update
+// remove
+
+//$resource
+// { 'get':    {method:'GET'},
+//   'save':   {method:'POST'},
+//   'query':  {method:'GET', isArray:true},
+//   'remove': {method:'DELETE'},
+//   'delete': {method:'DELETE'} };
+
 // Display a list of videos
 router.get('/', function(req, res) {
 	// remember the 'videos' collection we created in robomongo?
